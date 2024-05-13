@@ -1,44 +1,50 @@
-<!--(примітка: завдання кожного з пунктів оформлюйте окремим html файлом без використання css)
-Завдання 1. Створити html файл з формою для додавання викладача. Форма повинна містити наступні поля:
-Повне ім’я, стать, дата народження, email, телефон, бажаний колір фону, країна, місто, коментар.
--->
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>Homework-1</title>
+    <meta name="description" content="This is a form for adding a teacher.">
+    <meta name="keywords" content="HTML, Form, Teacher, Add">
+    <meta name="author" content="Fedorych Volodymyr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<form>
-    <label for="name">ПІБ:</label><br>
-    <input type="text" id="name" name="name" required><br>
+<header>
+    <h1>Add a Teacher</h1>
+</header>
+<main>
+    <form>
+        <fieldset>
+            <legend>Teacher Information</legend>
+            <label for="name">ПІБ:</label><br>
+            <input type="text" id="name" name="name" required><br>
 
-    <label for="gender">Стать:</label><br>
-    <input type="text" id="gender" name="gender" required><br>
+            <label for="gender">Стать:</label><br>
+            <input type="text" id="gender" name="gender" required><br>
 
-    <label for="dob">Дата народження:</label><br>
-    <input type="date" id="dob" name="dob" required><br>
+            <label for="dob">Дата народження:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
 
-    <label for="email">Ел. пошта:</label><br>
-    <input type="email" id="email" name="email" required><br>
+            <label for="email">Ел. пошта:</label><br>
+            <input type="email" id="email" name="email" required><br>
 
-    <label for="phone">Номер телефону:</label><br>
-    <input type="tel" id="phone" name="phone" required><br>
+            <label for="phone">Номер телефону:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
 
-    <label for="bgcolor">Бажаний колір:</label><br>
-    <input type="color" id="bgcolor" name="bgcolor" required><br>
+            <label for="bgcolor">Бажаний колір:</label><br>
+            <input type="color" id="bgcolor" name="bgcolor" required><br>
 
-    <label for="country">Країна:</label><br>
-    <input type="text" id="country" name="country" required><br>
+            <label for="country">Країна:</label><br>
+            <input type="text" id="country" name="country" required><br>
 
-    <label for="city">Місто:</label><br>
-    <input type="text" id="city" name="city" required><br>
+            <label for="city">Місто:</label><br>
+            <input type="text" id="city" name="city" required><br>
 
-    <label for="comment">Коментар:</label><br>
-    <textarea id="comment" name="comment" required></textarea><br>
-
-    <input type="submit" value="Submit">
-</form>
+            <label for="comment">Коментар:</label><br>
+            <textarea id="comment" name="comment" required></textarea><br>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</main>
 </body>
 </html>
